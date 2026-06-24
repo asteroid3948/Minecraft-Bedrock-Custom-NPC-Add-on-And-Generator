@@ -1,0 +1,9 @@
+{
+  "resource_pack_name": "Asteroid Npcs RP",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "asteroid_pack_icon": {
+      "textures": "textures/items/pack_icon"
+    }
+  }
+}

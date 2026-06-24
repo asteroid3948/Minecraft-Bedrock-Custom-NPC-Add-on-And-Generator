@@ -1,0 +1,115 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "asteroid:custom_npc",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "skin1": "textures/entity/npc/npc1_3d",
+        "skin2": "textures/entity/npc/npc2_3d",
+        "skin3": "textures/entity/npc/npc3_3d",
+        "skin4": "textures/entity/npc/npc4_3d",
+        "skin5": "textures/entity/npc/npc5_3d",
+        "skin6": "textures/entity/npc/npc6_3d",
+        "skin7": "textures/entity/npc/npc7_3d",
+        "skin8": "textures/entity/npc/npc8_3d",
+        "skin9": "textures/entity/npc/npc9_3d",
+        "skin10": "textures/entity/npc/npc10_3d",
+        "skin11": "textures/entity/npc/npc11_3d",
+        "skin12": "textures/entity/npc/npc12_3d",
+        "skin13": "textures/entity/npc/npc13_3d",
+        "skin14": "textures/entity/npc/npc14_3d",
+        "skin15": "textures/entity/npc/npc15_3d",
+        "skin16": "textures/entity/npc/npc16_3d",
+        "skin17": "textures/entity/npc/npc17_3d",
+        "skin18": "textures/entity/npc/npc18_3d",
+        "skin19": "textures/entity/npc/npc19_3d",
+        "skin20": "textures/entity/npc/npc20_3d",
+        "skin21": "textures/entity/npc/npc21_3d",
+        "skin22": "textures/entity/npc/npc22_3d",
+        "skin23": "textures/entity/npc/npc23_3d",
+        "skin24": "textures/entity/npc/npc24_3d",
+        "skin25": "textures/entity/npc/npc25_3d",
+        "skin26": "textures/entity/npc/npc26_3d",
+        "skin27": "textures/entity/npc/npc27_3d",
+        "skin28": "textures/entity/npc/npc28_3d",
+        "skin29": "textures/entity/npc/npc29_3d",
+        "skin30": "textures/entity/npc/npc30_3d",
+        "skin31": "textures/entity/npc/npc31_3d",
+        "skin32": "textures/entity/npc/npc32_3d",
+        "skin33": "textures/entity/npc/npc33_3d",
+        "skin34": "textures/entity/npc/npc34_3d",
+        "skin35": "textures/entity/npc/npc35_3d",
+        "skin36": "textures/entity/npc/npc36_3d",
+        "skin37": "textures/entity/npc/npc37_3d",
+        "skin38": "textures/entity/npc/npc38_3d",
+        "skin39": "textures/entity/npc/npc39_3d",
+        "skin40": "textures/entity/npc/npc40_3d",
+        "skin41": "textures/entity/npc/npc41_3d",
+        "skin42": "textures/entity/npc/npc42_3d",
+        "skin43": "textures/entity/npc/npc43_3d",
+        "skin44": "textures/entity/npc/npc44_3d",
+        "skin45": "textures/entity/npc/npc45_3d",
+        "skin46": "textures/entity/npc/npc46_3d",
+        "skin47": "textures/entity/npc/npc47_3d",
+        "skin48": "textures/entity/npc/npc48_3d",
+        "skin49": "textures/entity/npc/npc49_3d",
+        "skin50": "textures/entity/npc/npc50_3d",
+        "skin51": "textures/entity/npc/npc51_3d",
+        "skin52": "textures/entity/npc/npc52_3d",
+        "skin53": "textures/entity/npc/npc53_3d",
+        "skin54": "textures/entity/npc/npc54_3d",
+        "skin55": "textures/entity/npc/npc55_3d",
+        "skin56": "textures/entity/npc/npc56_3d",
+        "skin57": "textures/entity/npc/npc57_3d",
+        "skin58": "textures/entity/npc/npc58_3d",
+        "skin59": "textures/entity/npc/npc59_3d",
+        "skin60": "textures/entity/npc/npc60_3d",
+        "skin61": "textures/entity/npc/npc61_3d",
+        "skin62": "textures/entity/npc/npc62_3d",
+        "skin63": "textures/entity/npc/npc63_3d",
+        "skin64": "textures/entity/npc/npc64_3d",
+        "skin65": "textures/entity/npc/npc65_3d",
+        "skin66": "textures/entity/npc/npc66_3d",
+        "skin67": "textures/entity/npc/npc67_3d",
+        "skin68": "textures/entity/npc/npc68_3d",
+        "skin69": "textures/entity/npc/npc69_3d",
+        "skin70": "textures/entity/npc/npc70_3d",
+        "skin71": "textures/entity/npc/npc71_3d",
+        "skin72": "textures/entity/npc/npc72_3d",
+        "skin73": "textures/entity/npc/npc73_3d",
+        "skin74": "textures/entity/npc/npc74_3d",
+        "skin75": "textures/entity/npc/npc75_3d",
+        "skin76": "textures/entity/npc/npc76_3d",
+        "skin77": "textures/entity/npc/npc77_3d",
+        "skin78": "textures/entity/npc/npc78_3d",
+        "skin79": "textures/entity/npc/npc79_3d",
+        "skin80": "textures/entity/npc/npc80_3d",
+        "skin81": "textures/entity/npc/npc_steve"
+      },
+      "geometry": {
+        "default": "geometry.humanoid_custom_npc"
+      },
+      "animations": {
+        "idle": "animation.custom_npc.idle"
+      },
+      "scripts": {
+        "initialize": [
+          "variable.texture_index = 1;"
+        ],
+        "pre_animation": [
+          "variable.texture_index = query.property('asteroid:skin_variant');"
+        ],
+        "scale": "1.0",
+        "animate": [
+          "idle"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.custom_npc"
+      ]
+    }
+  }
+}

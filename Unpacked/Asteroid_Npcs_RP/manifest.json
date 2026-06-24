@@ -1,0 +1,23 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Asteroid Npc's RP",
+    "description": "Resource Pack for custom NPCs and NPC creator tools. Credits: Asteroid3946",
+    "uuid": "3c5b6d51-460b-46cb-8d59-3d1f1c7d24a3",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 80]
+  },
+  "modules": [
+    {
+      "type": "resources",
+      "uuid": "4d5b6d51-460b-46cb-8d59-3d1f1c7d24a4",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "1a5b6d51-460b-46cb-8d59-3d1f1c7d24a1",
+      "version": [1, 0, 0]
+    }
+  ]
+}
