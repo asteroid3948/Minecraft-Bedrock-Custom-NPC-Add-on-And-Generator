@@ -1,0 +1,103 @@
+{
+  "format_version": "1.20.80",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "asteroid:custom_npc",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "properties": {
+        "asteroid:skin_variant": {
+          "type": "int",
+          "default": 1,
+          "range": [1, 81],
+          "client_sync": true
+        },
+        "asteroid:look_at_player": {
+          "type": "bool",
+          "default": false,
+          "client_sync": true
+        }
+      }
+    },
+    "components": {
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "all",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:nameable": {
+        "allow_name_tag_renaming": false,
+        "always_show": true
+      },
+      "minecraft:custom_hit_test": {
+        "hitboxes": [
+          {
+            "width": 0.6,
+            "height": 1.8,
+            "pivot": [0, 0.9, 0]
+          }
+        ]
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "player"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "component_groups": {
+      "asteroid:look_at_group": {
+        "minecraft:lookat": {
+          "search_radius": 10,
+          "set_target": true,
+          "look_cooldown": 0,
+          "filters": {
+            "test": "is_family",
+            "subject": "other",
+            "value": "player"
+          }
+        }
+      }
+    },
+    "events": {
+      "asteroid:enable_look_at": {
+        "add": {
+          "component_groups": ["asteroid:look_at_group"]
+        }
+      },
+      "asteroid:disable_look_at": {
+        "remove": {
+          "component_groups": ["asteroid:look_at_group"]
+        }
+      }
+    }
+  }
+}
