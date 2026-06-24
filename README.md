@@ -90,4 +90,4 @@ python packbuilder.py "C:\Path\To\Skins" --output "MyCustomNpcs"
 ---
 
 ## Credits
-*   **Add-on Creator**: Asteroid3946
+*   **Add-on Creator**: Asteroid3948
